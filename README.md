@@ -1,17 +1,32 @@
-# Hello! This is my messenger
+# Hello! This is my messenger API made using Flask and Python
 
 ## here I will tell about how to use the API
 
-### "python -m flask --app hello run" to run the API
+
+### Main information
+
+#### to download Python, go to [python website](https://www.python.org/) and go to downloads
+
+#### to run the API, type in console:
+
+`python -m flask --app hello run`
+
+#### to install Flask, type in console:
+
+`pip install Flask`
 
 ## API routes:
 
-### "127.0.0.1:5000/" for main page
+#### `/` route for main page
 
-### "127.0.0.1:5000/username" to see all of messages that the user got and sent
+#### `/u` to see all of messages that the user got and sent
 
-### "127.0.0.1:5000/m/sender/getter" to see all of messages sent between to users
+#### `/s/<sender>/<getter>/<message>` to send a message to a user from a user
 
-### "127.0.0.1:5000/sendmessage/sender/getter/message" to send a message to a user from a user
+#### `/c/<username>` to create a user
+
+#### `/a` to see all users
+
+#### `/m/<sender>/<getter>` to see all of messages sent between to users
 
 ## Other API routes coming soon!
